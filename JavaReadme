@@ -1,0 +1,34 @@
+1) Difference between @NotNull, @NotBlank, @NotEmpty :
+@NotNull: a constrained CharSequence, Collection, Map, or Array is valid as long as 
+        it's not null, but it can be empty.
+@NotEmpty: a constrained CharSequence, Collection, Map, or Array is valid as long as
+        it's not null, and its size/length is greater than zero.
+@NotBlank: a constrained String is valid as long as it's not null, and the trimmed 
+        length is greater than zero.
+
+
+2) To run any maven based spring boot project :
+(If we want to run the server on default 8080 PORT, or, if the port if aready specified application.properites as server.port=8181)
+-> mvn spring-boot:run 
+
+        (OR)
+
+(If we want to run the server on default 8080 PORT, or, if the port if aready specified application.properites as server.port=8181)
+-> mvn clean package 
+-> java -jar target/connectionProject-0.0.1-SNAPSHOT.jar
+
+        (OR)
+
+(If we want to run the server on a specific PORT say 8181)
+-> mvn -Dmaven.tomcat.port=8181 spring-boot:run
+
+
+3) Convert git directory to NOT git directory (OR) undo git init :
+-> rm -rf .git
+
+
+
+
+
+
+expense_tracker_react_frontend
